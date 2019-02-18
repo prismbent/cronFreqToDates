@@ -1,0 +1,32 @@
+{
+  "name": "freq-to-date",
+  "version": "1.0.0",
+  "description": "Turning set of cron frequencies between a start and end date into a list of unique dates",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha ./tests --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "prismbent.com"
+  },
+  "keywords": [
+    "cron",
+    "frequency"
+  ],
+  "author": "prismbent",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cron-parser": "^2.7.3",
+    "express": "^4.16.4",
+    "qs": "^6.6.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "tap": "^12.5.3",
+    "tape": "^4.10.1"
+  }
+}
