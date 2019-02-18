@@ -20,7 +20,7 @@ describe('Helper Func', function() {
       });
 
       context('with 2019-2-16 00:00:00', function() {
-        it('should return 2', function() {
+        it('should return date format like new Date(\'2019-02-16 08:00:00\')', function() {
           let date = prepDates(['2019-2-16 00:00:00']);
           expect(date).to.eql(["new Date(\'2019-02-16 08:00:00\')"]);
         })

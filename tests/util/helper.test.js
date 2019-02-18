@@ -20,6 +20,13 @@ describe('Helper Func', function() {
 
       context('without duplicated arguments', function() {
         it('should return []', function() {
+          let uniq = dedup(['one', 'two', 'three']);
+          expect(uniq).to.eql(['one', 'two', 'three']);
+        })
+      });
+
+      context('with duplicated arguments', function() {
+        it('should return []', function() {
           let uniq = dedup(['one', 'two', 'one']);
           expect(uniq).to.eql(['one', 'two']);
         })
