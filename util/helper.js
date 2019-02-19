@@ -6,13 +6,7 @@ const date_sort_asc = function (date1, date2) {
 
 module.exports = {
   dedup: (list = []) => {
-    let dict = {};
-
-    for(let i = 0; i < list.length; i++){
-      dict[list[i]] = "added";
-    }
-
-    return Object.keys(dict);
+    return [...new Set(list)];
   },
   formatDate: (date) => {
       let d = new Date(date).toISOString().split('T');
